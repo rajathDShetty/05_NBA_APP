@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
-
+// import bootstrap from 'bootstrap';
 
 import  Routes  from './routes';
 
