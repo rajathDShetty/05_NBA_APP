@@ -1,5 +1,6 @@
-// import FontAwesome from 'react-fontawesome';
-import * as icons from 'react-bootstrap-icons';
+import FontAwesome from 'react-fontawesome';
+// import * as icons from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 import   '../css/header.css';
 
 import SideNav from './SideNav/sideNav';
@@ -9,17 +10,25 @@ const Header  = (props)=>{
 
     const navBars = () => (
         <div >
-            <icons.BorderWidth className="bars" 
-                onClick={() => { props.onOpenNav()}}
+            <FontAwesome name="bars"
+                onClick={props.onOpenNav}
+                style={{
+                    color:'#dfdfdf',
+                    padding:'10px',
+                    cursor:'pointer'
+                }}
             />
+            {/* <icons.BorderWidth className="bars" 
+                onClick={() => { props.onOpenNav()}}
+            /> */}
         </div>
     )
 
     const logo =() => {
         return(
-                    <a href="/" className="logo">
+                    <Link to="/" className="logo">
                         <img alt="nba logo" src="/images/nba_logo.png"/>
-                    </a>
+                    </Link>
         )
     }
     

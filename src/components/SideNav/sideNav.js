@@ -14,7 +14,7 @@ export default function SideNav(props) {
           },
         }}
         anchor="left" open={props.showNav} onClose={() => props.onHideNav()}>
-        <div style={{ width: 200, padding: 20 }}>
+        <div style={{ width: 220, padding: 20 }}>
             <SideNavItem /> 
         </div>
       </Drawer>

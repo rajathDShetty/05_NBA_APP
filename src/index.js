@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 // import bootstrap from 'bootstrap';
 
-import  Routes  from './routes';
+import  AppRoutes  from './appRoutes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 class App extends Component{
   render(){
     return(
-      <div>
-          <Routes />
-      </div>
+      <BrowserRouter>
+          <AppRoutes />
+      </BrowserRouter>
     );
   }
 }
