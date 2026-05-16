@@ -76,13 +76,13 @@ class NewsList extends Component {
                     >
                         <Link to={`/articles/${item.id}`}>
                             <div className= 'flex_wrapper'>
-                                <div className= 'left'
+                                <div className= 'nlleft'
                                     style={{
                                         background:`url('/images/articles/${item.image}')`
                                     }}>
                                     <div></div>
                                 </div>
-                                <div className= 'right'>
+                                <div className= 'nlright'>
                                     <CardInfo teams={this.state.teams} team={item.team} date={item.date}/>
                                     <h2>{item.title}</h2>
                                 </div>

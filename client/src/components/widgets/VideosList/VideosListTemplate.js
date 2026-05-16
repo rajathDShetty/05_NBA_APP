@@ -7,14 +7,14 @@ const VideosListTemplate = (props) => {
     return props.data.map( (item,i) => (
         <Link to={`/videos/${item.id}`} key={i}>
             <div className="videoListItem_wrapper">
-                <div className= "left"
+                <div className= "vleft"
                     style={{
                         background:`url(/images/videos/${item.image})`
                     }}
                 >
                     <div></div>
                 </div>
-                <div className="right">
+                <div className="vright">
                     <CardInfo teams={props.teams} team={item.team} date={item.date}/>
                     <h2>{item.title}</h2>
                 </div>

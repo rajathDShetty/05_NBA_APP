@@ -57,11 +57,11 @@
     background: #fff;
 }
 
-.left {
+.nlleft {
     background-size: cover !important;
 }
 
-.left div {
+.nlleft div {
     width:90px;
     height:90px;
     background-size:  40px !important;
@@ -69,7 +69,7 @@
     background-position:  center center !important;
 }
 
-.right {
+.nlright {
     flex-grow: 1;
     padding:10px;
 }

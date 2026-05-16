@@ -64,4 +64,16 @@ async function getArticleById(id) {
   return article;
 }
 
-module.exports = { getArticles, getArticleById ,getTeams, getVideos};
+async function getTeamsById(id) {
+  const db = await dbPromise;
+  const team = await db.collection("teams").findOne({ id });
+  return team;
+}
+
+async function getVideosById(id) {
+  const db = await dbPromise;
+  const video = await db.collection("videos").findOne({ id });
+  return video;
+}
+
+module.exports = { getArticles, getArticleById ,getTeams, getTeamsById, getVideos, getVideosById};
